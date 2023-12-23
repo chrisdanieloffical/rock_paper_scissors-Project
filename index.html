@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="script.js"></script>
-	<title>Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+	<style>
+		body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #968a8a; /* Set your desired background color */
+        }
+
+		#game_design {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border: 2px solid #230658;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+		button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #6142d4; /* Green background color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+		button:hover {
+            background-color: #230658; /* Darker green on hover */
+        }
+
+		#resultDisplay {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        #scoreDisplay {
+            font-size: 16px;
+        }
+
+	</style>
 </head>
 <body>
+	<div id="game_design">
+		<button id="rockBtn">Rock</button>
+		<button id="paperBtn">Paper</button>
+		<button id="scissorsBtn">Scissors</button>
 
+		<div id="resultDisplay"></div>
+		<div id="scoreDisplay">Player: 0 | Computer: 0</div>
+	</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
